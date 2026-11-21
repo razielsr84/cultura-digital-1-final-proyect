@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "deploy": "bun run build && gh-pages -d dist"
+    "deploy": "bun run build && gh-pages -d dist -b gh-pages -r https://github.com/razielsr84/cultura-digital-1-final-proyect.git"
   },
   "dependencies": {
     "react": "^19.3.1",
