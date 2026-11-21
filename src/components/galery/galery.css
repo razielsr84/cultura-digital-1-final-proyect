@@ -1,0 +1,108 @@
+/* ESTILOS BASE */
+.galery1,
+.galery2,
+.galery3 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+/* GALERÍA 1: UNA IMAGEN GRANDE */
+.galery1 {
+  display: block;
+}
+
+.galery1 img {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid var(--border-image);
+  border-radius: 9px;
+  box-sizing: border-box;
+}
+
+/* GALERÍA 2: DOS IMÁGENES LADO A LADO */
+.galery2 {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 12px;
+}
+
+.galery2 img {
+  display: block;
+  flex: 1 1 0;
+  width: 0;
+  min-width: 0;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid var(--border-image);
+  border-radius: 9px;
+  box-sizing: border-box;
+}
+
+/* GALERÍA 3: IMAGEN PEQUEÑA */
+.galery3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-surface);
+}
+
+.galery3 img {
+  display: block;
+  width: 55%;
+  max-width: 320px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid var(--border-image);
+  border-radius: 9px;
+}
+
+/* TABLETS */
+@media (max-width: 768px) {
+  .galery1 img {
+    height: 300px;
+  }
+
+  .galery2 {
+    gap: 8px;
+  }
+
+  .galery2 img {
+    height: 200px;
+  }
+
+  .galery3 img {
+    width: 75%;
+    height: 160px;
+  }
+}
+
+/* MÓVILES */
+@media (max-width: 480px) {
+  .galery1 img {
+    height: 230px;
+  }
+
+  .galery2 {
+    gap: 6px;
+  }
+
+  .galery2 img {
+    height: 150px;
+  }
+
+  .galery3 img {
+    width: 90%;
+    height: 140px;
+  }
+}

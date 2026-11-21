@@ -1,0 +1,40 @@
+@import url("https://googleapis.com");
+
+:root {
+  /* Fondos */
+  --bg-app: #09090b;
+  --bg-card: #121214;
+
+  /* Bordes */
+  --border-subtle: #2e2e32;
+  --border-image: #38383d;
+
+  /* Textos */
+  --text-primary: #ffffff;
+  --text-secondary: #f3f4f6;
+  --text-muted: #a1a1aa;
+
+  /* Acentos y sombras (Rojo anaranjado) */
+  --accent-hover: #0f569a;
+  --accent-primary: #0284c7;
+  --shadow-accent: rgba(132, 214, 163, 0.35);
+  --shadow-accent-strong: rgba(132, 214, 163, 0.6);
+
+  --bg-surface: #18181b;
+
+  /* Acentos y sombras en amarillo */
+  --accent-secundary: #10b781;
+  --shadow-secundary: rgba(155, 167, 154, 0.77);
+
+  /* Tipografía global */
+  --font-main: "Roboto", sans-serif;
+  --font-title: "Ubuntu", sans-serif;
+}
+
+/* Opcional: aplicar fondo oscuro y fuente a toda la app */
+body {
+  margin: 0;
+  background-color: var(--bg-app);
+  color: var(--text-secondary);
+  font-family: var(--font-main);
+}

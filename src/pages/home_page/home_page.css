@@ -1,0 +1,80 @@
+h1 {
+  text-align: center;
+}
+
+.title-box {
+  width: 80%;
+  margin: 32px auto; /* Centra el contenedor horizontalmente */
+  padding: 28px 20px;
+  box-sizing: border-box;
+  font-family: var(--font-title);
+
+  /* Un tono menos oscuro que el fondo principal (#09090b) */
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+
+  /* Sombra amarilla permanente */
+  box-shadow: 0 8px 24px var(--shadow-secundary);
+}
+
+.title-box .title {
+  margin: 0 0 24px 0;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  text-shadow: 0 0 12px var(--shadow-primary);
+}
+
+.title-box .subtitle {
+  margin: 0 0 24px 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-secundary);
+  text-shadow: 0 0 12px var(--shadow-secundary);
+}
+
+.general-info-box {
+  width: 80%;
+  margin: 32px auto; /* Centra el contenedor horizontalmente */
+  padding: 28px 20px;
+  box-sizing: border-box;
+  font-family: var(--font-main);
+  text-align: justify;
+
+  /* Un tono menos oscuro que el fondo principal (#09090b) */
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+
+  /* Sombra amarilla permanente */
+  box-shadow: 0 8px 24px var(--shadow-secundary);
+}
+
+.general-info-box h3 {
+  font-family: var(--font-title);
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--accent-secundary);
+  text-shadow: var(--shadow-secundary);
+}
+
+.general-info-box p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+  .title-box {
+    width: 95%;
+    padding: 20px 12px;
+  }
+
+  .general-info-box {
+    width: 95%;
+    padding: 20px 12px;
+  }
+}

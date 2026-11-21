@@ -1,0 +1,48 @@
+.articule-list {
+  width: 80%;
+  margin: 32px auto; /* Centra el contenedor horizontalmente */
+  padding: 28px 20px;
+  box-sizing: border-box;
+  font-family: var(--font-main);
+
+  /* Un tono menos oscuro que el fondo principal (#09090b) */
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+
+  /* Sombra amarilla permanente */
+  box-shadow: 0 8px 24px var(--shadow-secundary);
+}
+
+.articule-list .subtitle {
+  margin: 0 0 24px 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-secundary);
+  text-shadow: 0 0 12px var(--shadow-secundary);
+}
+
+/* Elimina el margen y relleno por defecto de la lista */
+.articule-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Ajuste para que las tarjetas aprovechen mejor el espacio dentro del 80% */
+.articule-list .articule-card {
+  width: 75%;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+  .articule-list {
+    width: 95%;
+    padding: 20px 12px;
+  }
+
+  .articule-list .articule-card {
+    width: 92%;
+  }
+}
