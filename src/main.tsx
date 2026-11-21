@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router";
 import "./colors.css";
 
 createRoot(document.getElementById("root")!).render(
-  <BrowserRouter>
+  <BrowserRouter basename={import.meta.env.BASE_URL}>
     <StrictMode>
       <App />
     </StrictMode>
